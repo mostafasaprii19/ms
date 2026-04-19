@@ -1,0 +1,28 @@
+body {
+  text-align: center;
+}
+
+img {
+  width: 300px;
+}
+
+button {
+  margin: 20px;
+  padding: 10px 20px;
+}
+
+/* ✨ أهم جزء */
+@media print {
+
+  /* اخفي كل حاجة */
+  body * {
+    display: none;
+  }
+
+  /* اظهر الصورة بس */
+  .print-img {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+}
