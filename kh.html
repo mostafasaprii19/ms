@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Print Receipt</title>
+
+<style>
+  body {
+    text-align: center;
+  }
+
+  img {
+    width: 300px;
+  }
+
+  button {
+    margin: 20px;
+    padding: 10px 20px;
+  }
+
+  /* ✨ أهم جزء */
+  @media print {
+
+    /* اخفي كل حاجة */
+    body * {
+      display: none;
+    }
+
+    /* اظهر الصورة بس */
+ .print-img {
+  display: block;
+  margin: auto;
+}
+
+  }
+</style>
+
+</head>
+<body>
+
+<button onclick="window.print()">🖨️ طباعة</button>
+
+<img src="1.jpeg" class="print-img">
+
+</body>
+</html>
